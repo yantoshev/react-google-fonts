@@ -1,0 +1,31 @@
+.c-list {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.c-list-item {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.c-list-item.active {
+  background: #b5d2da;
+}
+
+.c-item__favourite {
+  float: right;
+}
+
+.c-item__favourite:before {
+  content: '\2606';
+  display: inline-block;
+}
+
+.c-item__favourite.active:before {
+  content: '\2605';
+  display: inline-block;
+}
